@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Achyutha Kothapalli – Senior AI Engineer</title>
+<meta name="description" content="Senior AI Engineer in Düsseldorf. Agentic AI, Python backends and data engineering, with 8+ years in automotive simulation and autonomous driving.">
+<meta property="og:title" content="Achyutha Kothapalli – Senior AI Engineer">
+<meta property="og:description" content="Agentic AI, Python backends and data engineering. 8+ years in automotive simulation and autonomous driving.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/achyutha.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2315212E'/%3E%3Crect x='14.5' y='4' width='3' height='6' fill='%23E8B10A'/%3E%3Crect x='14.5' y='13' width='3' height='6' fill='%23E8B10A'/%3E%3Crect x='14.5' y='22' width='3' height='6' fill='%23E8B10A'/%3E%3C/svg%3E">
+<style>
+@font-face {
+  font-family: 'Archivo';
+  src: url('assets/fonts/Archivo.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+}
+:root {
+  --paper: #F2F4F6;
+  --surface: #FFFFFF;
+  --ink: #15212E;
+  --steel: #556373;
+  --hair: #D6DCE3;
+  --asphalt: #1E2A37;
+  --asphalt-hi: #2A3846;
+  --lane: #E8B10A;
+  --link: #0B6672;
+  --wrap: 1080px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Archivo', system-ui, sans-serif;
+  font-stretch: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--link); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--lane); outline-offset: 3px; border-radius: 4px;
+}
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+b, strong { font-weight: 650; }
+
+/* ---------- top bar ---------- */
+.top { padding: 22px 0; }
+.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.mark { font-stretch: 125%; font-weight: 750; font-size: 15px; letter-spacing: .01em; color: var(--ink); text-decoration: none; }
+.top nav { display: flex; gap: 22px; font-size: 15px; }
+.top nav a { color: var(--steel); text-decoration: none; }
+.top nav a:hover { color: var(--ink); }
+
+/* ---------- hero ---------- */
+.hero { padding: 48px 0 72px; }
+.hero .wrap { display: grid; grid-template-columns: 1fr 220px; gap: 56px; align-items: end; }
+.hero h1 {
+  font-stretch: 125%;
+  font-weight: 780;
+  font-size: clamp(44px, 7.4vw, 92px);
+  line-height: .96;
+  letter-spacing: -.015em;
+}
+.hero .role {
+  margin-top: 22px;
+  font-stretch: 112%;
+  font-weight: 600;
+  font-size: clamp(20px, 2.2vw, 26px);
+  color: var(--ink);
+}
+.hero .intro { margin-top: 14px; max-width: 58ch; color: var(--steel); font-size: 18px; }
+.actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 11px 18px; border-radius: 8px;
+  font-weight: 600; font-size: 15px; text-decoration: none;
+  border: 1.5px solid var(--ink); color: var(--ink); background: transparent;
+}
+.btn svg { width: 17px; height: 17px; }
+.btn.primary { background: var(--ink); color: #fff; }
+button.btn { font: inherit; font-weight: 600; font-size: 15px; cursor: pointer; }
+.btn:hover { background: var(--asphalt-hi); border-color: var(--asphalt-hi); color: #fff; }
+.portrait { width: 220px; aspect-ratio: 35 / 45; border-radius: 12px; overflow: hidden; background: var(--hair); }
+.portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.facts { margin-top: 14px; font-size: 14px; color: var(--steel); line-height: 1.5; }
+
+/* ---------- route (career band) ---------- */
+.route { background: var(--asphalt); color: #E9EEF3; padding: 64px 0 72px; }
+.route h2 { color: #fff; }
+.route .sub { color: #A9B6C3; margin-top: 8px; max-width: 60ch; }
+.track { list-style: none; position: relative; margin-top: 48px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
+.track::before {
+  content: ''; position: absolute; left: 0; right: 0; top: 9px; height: 4px;
+  background: repeating-linear-gradient(90deg, var(--lane) 0 26px, transparent 26px 44px);
+  transform-origin: left center;
+  animation: draw 1.6s cubic-bezier(.6,.05,.3,1) .2s backwards;
+}
+@keyframes draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.stop { position: relative; padding-top: 38px; }
+.stop::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--asphalt); border: 4px solid #fff;
+}
+.stop.now::before { background: var(--lane); border-color: var(--lane); box-shadow: 0 0 0 6px rgba(232,177,10,.22); }
+.stop .yr { font-weight: 650; color: #fff; font-size: 15px; }
+.stop .org { margin-top: 2px; font-size: 15px; color: #fff; }
+.stop .what { margin-top: 6px; font-size: 14px; color: #A9B6C3; line-height: 1.45; }
+
+/* ---------- sections ---------- */
+section.block { padding: 84px 0 0; }
+h2 {
+  font-stretch: 118%;
+  font-weight: 720;
+  font-size: clamp(28px, 3.4vw, 40px);
+  line-height: 1.1;
+  letter-spacing: -.01em;
+}
+.lead { margin-top: 10px; color: var(--steel); max-width: 62ch; }
+
+/* selected work */
+.work { margin-top: 36px; border-top: 1.5px solid var(--ink); }
+.case { display: grid; grid-template-columns: 5fr 7fr; gap: 40px; padding: 34px 0; border-bottom: 1px solid var(--hair); }
+.case .result {
+  font-stretch: 110%;
+  font-weight: 700;
+  font-size: clamp(22px, 2.5vw, 30px);
+  line-height: 1.18;
+}
+.case .ctx { margin-top: 10px; font-size: 15px; color: var(--steel); }
+.case p { max-width: 62ch; }
+.case .stack { margin-top: 12px; font-size: 14px; color: var(--steel); }
+
+/* projects */
+.projects { margin-top: 36px; display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 20px; }
+.proj { background: var(--surface); border-radius: 12px; padding: 26px 24px; border: 1px solid var(--hair); }
+.proj.lead-proj { background: var(--ink); color: #E9EEF3; border-color: var(--ink); }
+.proj.lead-proj .pmeta { color: #A9B6C3; }
+.proj h3 { font-stretch: 108%; font-weight: 700; font-size: 20px; line-height: 1.25; }
+.proj .pmeta { margin-top: 4px; font-size: 14px; color: var(--steel); }
+.proj p { margin-top: 12px; font-size: 16px; }
+
+/* skills */
+.skills { margin-top: 36px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; }
+.skill { padding: 18px 0; border-top: 1px solid var(--hair); }
+.skill h3 { font-weight: 650; font-size: 16px; }
+.skill ul { list-style: none; margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px; }
+.skill li { font-size: 14px; padding: 4px 11px; border-radius: 999px; background: var(--surface); border: 1px solid var(--hair); }
+.skill.ai li { background: #FFF7DC; border-color: #F0D57A; }
+
+/* experience */
+.roles { margin-top: 36px; border-top: 1.5px solid var(--ink); }
+.role-item { display: grid; grid-template-columns: 300px 1fr; gap: 40px; padding: 28px 0; border-bottom: 1px solid var(--hair); }
+.roles .rt { font-weight: 650; font-size: 18px; line-height: 1.3; }
+.roles .ro { color: var(--steel); font-size: 15px; margin-top: 4px; }
+.roles .rd { color: var(--steel); font-size: 15px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.roles .rs { max-width: 64ch; }
+.earlier { margin-top: 26px; font-size: 15px; color: var(--steel); }
+.earlier div { display: flex; justify-content: space-between; gap: 16px; padding: 6px 0; }
+
+/* credentials */
+.creds { margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.creds h3 { font-weight: 650; font-size: 16px; padding-bottom: 10px; border-bottom: 1.5px solid var(--ink); }
+.creds ul { list-style: none; margin-top: 12px; }
+.creds li { padding: 6px 0; font-size: 15px; }
+.creds li span { display: block; color: var(--steel); font-size: 14px; }
+
+/* contact */
+.contact { margin-top: 96px; background: var(--asphalt); color: #E9EEF3; padding: 72px 0 40px; }
+.contact h2 { color: #fff; font-size: clamp(34px, 5vw, 60px); font-stretch: 125%; }
+.contact p { margin-top: 14px; color: #A9B6C3; max-width: 56ch; }
+.contact .actions .btn { border-color: #fff; color: #fff; }
+.contact .actions .btn.primary { background: var(--lane); border-color: var(--lane); color: var(--ink); }
+.contact .actions .btn:hover { background: #fff; color: var(--ink); }
+.foot { margin-top: 64px; font-size: 13px; color: #8494A4; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.foot a { color: #A9B6C3; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 900px) {
+  .hero .wrap { grid-template-columns: 1fr; gap: 28px; }
+  .hero .wrap > div:last-child { order: -1; }
+  .portrait { width: 120px; }
+  .facts { display: none; }
+  .case { grid-template-columns: 1fr; gap: 12px; }
+  .role-item { grid-template-columns: 1fr; gap: 10px; }
+  .projects { grid-template-columns: 1fr; }
+  .skills { grid-template-columns: 1fr; }
+  .creds { grid-template-columns: 1fr; gap: 28px; }
+  .track { grid-template-columns: 1fr; gap: 26px; padding-left: 40px; }
+  .track::before {
+    left: 9px; right: auto; top: 0; bottom: 0; width: 4px; height: auto;
+    background: repeating-linear-gradient(180deg, var(--lane) 0 22px, transparent 22px 36px);
+    transform-origin: center top;
+    animation-name: drawv;
+  }
+  @keyframes drawv { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+  .stop { padding-top: 0; }
+  .stop::before { left: -40px; top: 2px; }
+}
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .top nav { display: none; }
+  .hero { padding: 24px 0 56px; }
+  .earlier div { flex-direction: column; gap: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .track::before { animation: none; }
+}
+@media print {
+  .top nav, .actions { display: none; }
+  .route, .contact { background: #fff; color: var(--ink); }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#">Achyutha Kothapalli</a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Achyutha<br>Kothapalli</h1>
+      <p class="role">Senior AI Engineer building agentic AI, Python backends and data platforms</p>
+      <p class="intro">I’ve spent 8+ years building tools that turn autonomous-driving simulation data into answers engineers trust, at Foretellix, CARIAD (Volkswagen Group) and Renault-Nissan. Now I bring that same rigor to LLM agents: grounded, validated and measurable.</p>
+      <div class="actions">
+        <a class="btn primary" href="assets/Achyutha_Kothapalli_CV_EN.pdf" download>Download CV</a>
+        <a class="btn" href="assets/Achyutha_Kothapalli_Lebenslauf_DE.pdf" download>Lebenslauf (DE)</a>
+        <a class="btn" href="https://www.linkedin.com/in/achyuthrao/" target="_blank" rel="noopener"><svg aria-hidden="true" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>LinkedIn</a>
+        <a class="btn" href="https://github.com/achyutha-kothapalli" target="_blank" rel="noopener"><svg aria-hidden="true" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>GitHub</a>
+      </div>
+    </div>
+    <div>
+      <div class="portrait"><img src="assets/achyutha.jpg" alt="Portrait of Achyutha Kothapalli" width="420" height="540"></div>
+      <p class="facts">Based in Düsseldorf<br>English (native), German (C1)<br>Open to senior AI and data roles</p>
+    </div>
+  </div>
+</section>
+
+<section class="route" aria-labelledby="route-h">
+  <div class="wrap">
+    <h2 id="route-h">From mechanical engineering to agentic AI</h2>
+    <p class="sub">Every stop added a layer: physics, simulation at scale, tooling, then AI on top of it all.</p>
+    <ol class="track">
+      <li class="stop"><div class="yr">2015</div><div class="org">Ruhr-Universität Bochum</div><div class="what">M.Sc. Computational Engineering. Automated finite element modelling in Python.</div></li>
+      <li class="stop"><div class="yr">2017</div><div class="org">Renault-Nissan</div><div class="what">Simulation pipelines for ADAS. CAE Best Performer Award FY18.</div></li>
+      <li class="stop"><div class="yr">2020</div><div class="org">Autonomous Intelligent Driving</div><div class="what">Scenario testing for L4 autonomous driving.</div></li>
+      <li class="stop"><div class="yr">2020</div><div class="org">CARIAD (VW Group)</div><div class="what">Designed a DSL and requirement-to-simulation pipelines.</div></li>
+      <li class="stop"><div class="yr">2022</div><div class="org">Foretellix</div><div class="what">Agentic AI pipelines, LLM tooling and KPI services.</div></li>
+      <li class="stop now"><div class="yr">Now</div><div class="org">Senior AI Engineer</div><div class="what">Databricks-certified. Leading a hackathon team at Future Careers Festival.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <h2 id="work-h">Selected work</h2>
+    <p class="lead">Three systems I built at Foretellix and the difference they made.</p>
+    <div class="work">
+      <article class="case">
+        <div>
+          <h3 class="result">Simulation artefacts generated from plain-language intent</h3>
+          <p class="ctx">Agentic AI pipeline</p>
+        </div>
+        <div>
+          <p>LLM agents read a high-level request, pick the right instructions from a Markdown knowledge base, and call tools that fill code templates through structured outputs. Prompt evaluation, guardrails, schema validation and hallucination checks keep every artefact consistent and reproducible.</p>
+          <p class="stack">Python, OpenAI API, LangChain, Pydantic structured outputs, tool calling</p>
+        </div>
+      </article>
+      <article class="case">
+        <div>
+          <h3 class="result">5 developer-weeks down to a few hours, every release</h3>
+          <p class="ctx">Release documentation tool, owned end to end</p>
+        </div>
+        <div>
+          <p>A release-critical documentation generator used by every developer, QA engineer and customer. I automated it in the cloud, which removed almost all of the documentation and rework effort that used to block each release.</p>
+          <p class="stack">Python, cloud automation, Jenkins CI/CD, Docker</p>
+        </div>
+      </article>
+      <article class="case">
+        <div>
+          <h3 class="result">Simulation triage from 1 day to 1 hour</h3>
+          <p class="ctx">KPI services and LLM-powered triage</p>
+        </div>
+        <div>
+          <p>FastAPI services that expose KPI, event and diagnostic data as structured JSON, plus LLM tooling that helps engineers find the root cause of failed runs. Data quality gates stop invalid configurations before they reach anyone downstream.</p>
+          <p class="stack">FastAPI, Python, pytest, pre-commit, data quality checks</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="projects" aria-labelledby="proj-h">
+  <div class="wrap">
+    <h2 id="proj-h">Projects and leadership</h2>
+    <div class="projects">
+      <article class="proj lead-proj">
+        <h3>Team lead, Future Careers Festival hackathon</h3>
+        <p class="pmeta">October 2026</p>
+        <p>Leading a team of five from idea through architecture to a working prototype, and owning scope, task split and delivery.</p>
+        <p class="pmeta">FastAPI, React, Claude Code</p>
+      </article>
+      <article class="proj">
+        <h3>Agentic disengagement triage</h3>
+        <p class="pmeta">Hackathon project, 2026</p>
+        <p>An agentic AI system that triages autonomous driving disengagements and points engineers to likely root causes.</p>
+      </article>
+      <article class="proj">
+        <h3>Azure Databricks data platform</h3>
+        <p class="pmeta">Personal project, 2026</p>
+        <p>An end-to-end data engineering project on Azure Databricks, with infrastructure provisioned as code in Terraform.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="skills" aria-labelledby="skills-h">
+  <div class="wrap">
+    <h2 id="skills-h">What I work with</h2>
+    <div class="skills">
+      <div class="skill ai"><h3>AI and LLMs</h3><ul>
+        <li>Agentic AI</li><li>Tool calling</li><li>MCP</li><li>OpenAI API</li><li>Claude API</li><li>LangChain</li><li>Prompt evaluation</li><li>Structured outputs</li><li>Guardrails</li><li>Claude Code</li><li>Codex</li></ul></div>
+      <div class="skill"><h3>Backend</h3><ul>
+        <li>Python</li><li>FastAPI</li><li>REST APIs</li><li>React</li><li>pytest</li><li>Docker</li><li>Git</li></ul></div>
+      <div class="skill"><h3>Data engineering</h3><ul>
+        <li>PySpark</li><li>SQL</li><li>Azure Databricks</li><li>Azure Data Factory</li><li>Azure Synapse</li><li>Data modelling</li><li>Data quality</li></ul></div>
+      <div class="skill"><h3>DevOps and MLOps</h3><ul>
+        <li>Jenkins CI/CD</li><li>Terraform</li><li>MLflow</li></ul></div>
+      <div class="skill"><h3>Domain</h3><ul>
+        <li>ADAS and autonomous driving</li><li>Scenario-based testing</li><li>Simulation data</li><li>MATLAB/Simulink</li><li>DSL design (JetBrains MPS)</li></ul></div>
+      <div class="skill"><h3>Ways of working</h3><ul>
+        <li>End-to-end ownership</li><li>Customer-facing</li><li>Code reviews</li><li>Mentoring</li><li>Scrum and Kanban</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="experience" aria-labelledby="exp-h">
+  <div class="wrap">
+    <h2 id="exp-h">Experience</h2>
+    <div class="roles">
+      <article class="role-item">
+        <div><h3 class="rt">Senior Software Engineer</h3><div class="ro">Foretellix GmbH, Düsseldorf</div><div class="rd">06/2022 to 01/2026</div></div>
+        <p class="rs">I built agentic AI and data tooling for a scenario-based testing platform for autonomous vehicles. My LLM pipeline turns plain-language requests into simulation artefacts, with guardrails and evaluation that make the output reliable enough for production. I also owned a release-critical documentation tool end to end, which cut documentation and rework effort from 5 developer-weeks to a few hours every release, and built FastAPI services and LLM tooling that reduced simulation triage from a day to an hour. Alongside this I ran code reviews, led large refactorings and mentored other developers.</p>
+      </article>
+      <article class="role-item">
+        <div><h3 class="rt">Senior PMT (Process, Methods &amp; Tools) Engineer</h3><div class="ro">CARIAD SE (Volkswagen Group), Ingolstadt</div><div class="rd">09/2020 to 05/2022</div></div>
+        <p class="rs">I designed a domain-specific language in JetBrains MPS that lets any ADAS function describe complex signal and configuration logic in a standard way. Around it I built Python pipelines that turn structured requirements into ready-to-run simulation datasets and configurations, replacing manual preparation, and worked closely with developers and domain experts to keep the tooling usable as requirements changed.</p>
+      </article>
+      <article class="role-item">
+        <div><h3 class="rt">Scenario Test Analyst</h3><div class="ro">Autonomous Intelligent Driving GmbH, Munich</div><div class="rd">04/2020 to 06/2020</div></div>
+        <p class="rs">I specified and ran structured test scenarios to validate Level 4 autonomous driving functions against pass and fail criteria for sign-off. Within a short ramp-up I also improved the team&#x27;s internal tools for creating scenarios and managing test data.</p>
+      </article>
+      <article class="role-item">
+        <div><h3 class="rt">Senior Engineer</h3><div class="ro">Renault-Nissan Technology &amp; Business Centre India, Chennai</div><div class="rd">10/2017 to 11/2019</div></div>
+        <p class="rs">I automated how ADAS and autonomous driving simulations were prepared, post-processed and validated, using Python pipelines that ran across large numbers of runs. Parameterised test generation widened test coverage, and standard data quality checks caught bad results before analysis. This work earned me the CAE Best Performer Award FY18.</p>
+      </article>
+      <article class="role-item">
+        <div><h3 class="rt">Research Assistant</h3><div class="ro">ICAMS, Ruhr-Universität Bochum, Bochum</div><div class="rd">10/2015 to 01/2017</div></div>
+        <p class="rs">I automated the generation of finite element models from statistical microstructure data, replacing slow and error-prone manual geometry work, and simulated how metal microstructures deform in ABAQUS with reproducible Python workflows.</p>
+      </article>
+    </div>
+    <div class="earlier">
+      <p style="font-weight:650;color:var(--ink);margin-bottom:4px">Earlier</p><div><span><b>Student Trainee</b>, Huf Hülsbeck &amp; Fürst GmbH &amp; Co. KG, Velbert</span><span>05/2016 to 01/2017</span></div><div><span><b>Internship &amp; Master Thesis</b>, HBPO GmbH &amp; Co. KG, Lippstadt</span><span>10/2014 to 08/2015</span></div><div><span><b>Graduate Apprentice Trainee</b>, Hindustan Aeronautics Limited, Bangalore</span><span>08/2011 to 08/2012</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" aria-labelledby="cred-h">
+  <div class="wrap">
+    <h2 id="cred-h">Education and credentials</h2>
+    <div class="creds">
+      <div><h3>Education</h3><ul>
+        <li>M.Sc. Computational Engineering<span>Ruhr-Universität Bochum, 2012 to 2015</span></li>
+        <li>B.Tech Mechanical Engineering<span>VIT University, Vellore, 2007 to 2011</span></li></ul></div>
+      <div><h3>Certifications</h3><ul>
+        <li>Databricks Certified Data Engineer Associate<span>2026</span></li>
+        <li>Intel Certified Developer, MLOps Professional</li>
+        <li>iSAQB Certified Professional for Software Architecture<span>Foundation Level</span></li></ul></div>
+      <div><h3>Recognition and languages</h3><ul>
+        <li>CAE Best Performer Award FY18<span>Renault-Nissan Technology &amp; Business Centre India</span></li>
+        <li>English<span>Native</span></li>
+        <li>German<span>Fluent, C1 (B2 certificate)</span></li></ul></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>I'm looking for senior AI engineering roles, including data engineering and forward-deployed work. The quickest way to reach me is email or LinkedIn.</p>
+    <div class="actions">
+      <button class="btn primary" type="button" id="reveal-email" aria-live="polite"><svg aria-hidden="true" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path></svg><span>Show email address</span></button>
+      <a class="btn" href="https://www.linkedin.com/in/achyuthrao/" target="_blank" rel="noopener"><svg aria-hidden="true" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>LinkedIn</a>
+      <a class="btn" href="https://github.com/achyutha-kothapalli" target="_blank" rel="noopener"><svg aria-hidden="true" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>GitHub</a>
+    </div>
+    <div class="foot">
+      <span>Achyutha Kothapalli, Düsseldorf</span>
+      <a href="assets/Achyutha_Kothapalli_CV_EN.pdf" download>Download CV (PDF)</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // The address is stored scrambled and only assembled after a click,
+  // so it never appears in the page source for scrapers to harvest.
+  var parts = ['bW9jLmxpYW1n', 'aWxsYXBhaHRvay5haHR1eWhjYQ=='];
+  var btn = document.getElementById('reveal-email');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var host = atob(parts[0]).split('').reverse().join('');
+    var user = atob(parts[1]).split('').reverse().join('');
+    var addr = user + String.fromCharCode(64) + host;
+    var a = document.createElement('a');
+    a.className = btn.className;
+    a.href = 'mai' + 'lto:' + addr;
+    a.innerHTML = btn.innerHTML;
+    a.querySelector('span').textContent = addr;
+    btn.replaceWith(a);
+    a.focus();
+  }, { once: true });
+})();
+</script>
+<noscript><style>#reveal-email { display: none; }</style></noscript>
+</body>
+</html>
